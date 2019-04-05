@@ -7,3 +7,22 @@ export function setWords(words) {
   }
 }
 
+export function highlightWord(word) {
+  return {
+    type: actionTypes.HIGHLIGHT_WORD,
+    word: word
+  }
+}
+
+export function turnOn() {
+  return {
+    type: actionTypes.TURN_ON,
+  }
+}
+
+export function turnOff() {
+  return {
+    type: actionTypes.TURN_OFF,
+  }
+}
+
