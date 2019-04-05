@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import * as speechCommands from '@tensorflow-models/speech-commands';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
