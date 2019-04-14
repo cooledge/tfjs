@@ -4,6 +4,7 @@ import './App.css';
 import * as tf from '@tensorflow/tfjs';
 import * as speechCommands from '@tensorflow-models/speech-commands';
 import Speech from './components/Speech'
+import Vision from './components/Vision'
 import { Provider } from 'react-redux';
 import store from './stores/store'
 
@@ -12,6 +13,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div className="App">
+          <Vision></Vision>
           <Speech></Speech>
           <header className="App-header">
             <div id="console"></div>
